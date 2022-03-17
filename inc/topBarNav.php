@@ -77,6 +77,9 @@
               <!-- <li class="nav-item">
                 <a href="./?page=contact_us" class="nav-link <?= isset($page) && $page =='contact_us' ? "active" : "" ?>">Contact Us</a>
               </li> -->
+              <li class="nav-item">
+                <a href="./?page=struk" class="nav-link <?= isset($page) && $page =='struk' ? "active" : "" ?>">Reservation Report</a>
+              </li>
               <?php if($_settings->userdata('id') > 0 && $_settings->userdata('login_type' != 1)): ?>
               <li class="nav-item">
                 <a href="./?page=profile" class="nav-link <?= isset($page) && $page =='profile' ? "active" : "" ?>">Profile</a>

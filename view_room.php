@@ -79,6 +79,5 @@ if(isset($_GET['id'])){
         $('#reserve_room').click(function(){
             uni_modal("Reservation for <?= $name ?>","reserve.php?rid=<?= isset($id) ? $id : '' ?>",'mid-large')
         })
-        
     })
 </script>

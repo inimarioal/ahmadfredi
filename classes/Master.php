@@ -245,8 +245,10 @@ Class Master extends DBConnection {
 			$rid = !empty($id) ? $id : $this->conn->insert_id;
 			$resp['id'] = $rid;
 			$resp['status'] = 'success';
+			$rcode = !empty($code) ? $code : $this->conn->insert_code;
+			$resp['code'] = $rcode;
 			if(empty($id))
-				$resp['msg'] = "Room Reservation has successfully submitted.";
+				$resp['msg'] = "Room Reservation has successfully. <br> Copy your Reservation Code!!! <br> $rcode";
 			else
 				$resp['msg'] = "Room Reservation details has been updated successfully.";
 		}else{
